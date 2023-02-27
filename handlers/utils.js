@@ -411,12 +411,6 @@ module.exports = async (client) => {
 ✨ A new rising guardian 🚀
  `
       )
-      .addFields([
-        {
-          name: `Stats`,
-          value: `>>> ** :gear: \`${allcommands}\` Commands \n :file_folder: \`${allguilds}\` Guilds \n ⌚️ ${botuptime} Uptime \n 🏓 \`${client.ws.ping}\` Ping \n  **`,
-        },
-      ])
       .setFooter(client.getFooter(user));
 
     let main_msg = await send({
